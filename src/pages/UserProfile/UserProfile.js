@@ -76,7 +76,7 @@ export const UserProfile = () => {
           "Correcto",
           "El cambio se realizo correctamente en la base de datos.",
           "success"
-        ).then((result) => console.log("entra"));
+        ).then(() => window.location.reload(true));
       } else {
         Swal.fire({
           icon: "error",
