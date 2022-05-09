@@ -26,7 +26,7 @@ export const RegisterBeverage = () => {
           "Correcto",
           "El producto se creó correctamente en la base de datos.",
           "success"
-        );
+        ).then(() => window.location.reload(true));
       } else {
         Swal.fire({
           icon: "error",
